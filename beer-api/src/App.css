@@ -84,6 +84,11 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+.imageContainer,
+.contentContainer { 
+  display: flex;
+  justify-content: space-between;
+}
 .imageContainer { 
-  
+  width: 35%;
 }
