@@ -7,6 +7,7 @@ import
 } from 'react-router-dom';
 
 import Home from "./Components/Home";
+import AllBeers from "./Components/AllBeers";
 
 export default function App()
 {
@@ -17,6 +18,7 @@ export default function App()
         <Switch>
 
           <Route exact path="/"><Home /></Route>
+          <Route path="/AllBeers"><AllBeers /></Route>
 
 
         </Switch>

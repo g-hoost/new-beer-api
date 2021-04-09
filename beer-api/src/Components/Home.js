@@ -6,28 +6,31 @@ import
 {
     Link
 } from "react-router-dom";
-import Axios from 'axios';
 
 const Home = () =>
 {
     return (
 
         <section className="home">
-            <div className="allBeers">
-                <img src={img_allbeers} alt="bottles of beer"></img>
-                <div className="headerContainer">
-                    <h2>All Beers</h2>
+            <Link to="/AllBeers">
+                <div className="allBeers">
+                    <img src={img_allbeers} alt="bottles of beer"></img>
+                    <div className="headerContainer">
+                        <h2>All Beers</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
-            </div>
-            <div className="randomBeer">
-                <img src={img_randombeer} alt="full glasses of beer"></img>
-                <div className="headerContainer">
-                    <h2>Random Beer</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
+            </Link>
+            <Link>
+                <div className="randomBeer">
+                    <img src={img_randombeer} alt="full glasses of beer"></img>
+                    <div className="headerContainer">
+                        <h2>Random Beer</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
 
-            </div>
+                </div>
+            </Link>
             <div className="homeFooter">
                 <Link to="/home">
                     <button></button>
