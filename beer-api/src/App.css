@@ -3,9 +3,8 @@
 
 body {
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
   max-width: 414px;
+  max-height: 933px;
   margin: 0 auto;
   padding-top: 3rem;
   font-family: 'Roboto Slab', serif;
@@ -43,4 +42,35 @@ body {
 .randomBeer p,
 .allBeers p {
   width: 353px;
+}
+.homeFooter {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: #FFCA41;
+}
+.homeFooter img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.homeFooter img {
+  position: absolute;
+  width: 57px;
+  height: auto;
+  left: calc(50% - 57px/2 - 0.5px);
+  bottom: 15px;
+}
+.home button {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  border-style: none;
 }
