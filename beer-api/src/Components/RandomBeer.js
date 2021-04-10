@@ -6,7 +6,7 @@ import React from 'react';
 import axios from 'axios';
 import { withRouter } from "react-router";
 
-class RandomBeers extends React.Component
+class RandomBeer extends React.Component
 {
     constructor(props)
     {
@@ -20,7 +20,7 @@ class RandomBeers extends React.Component
     componentDidMount()
     {
 
-        axios.get(`https://ih-beers-api2.herokuapp.com/beers/random` + this.props.match.params.id)
+        axios.get(`https://ih-beers-api2.herokuapp.com/beers/random`)
             .then(res =>
             {
                 const beerList = res.data;
@@ -35,7 +35,7 @@ class RandomBeers extends React.Component
         const item = this.state.beerList;
         return (
 
-            <section className="detailBeerList">
+            <section className="randomBeerList">
 
                 <div className="detailImageContainer">
                     <img src={item.image_url} alt="beer"></img>
@@ -53,4 +53,4 @@ class RandomBeers extends React.Component
         )
     }
 }
-export default withRouter(RandomBeers);
+export default withRouter(RandomBeer);

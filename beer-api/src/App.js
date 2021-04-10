@@ -8,7 +8,7 @@ import
 
 import Home from "./Components/Home";
 import AllBeers from "./Components/AllBeers";
-import RandomBeers from "./Components/RandomBeers";
+import RandomBeer from "./Components/RandomBeer";
 import DetailBeer from "./Components/DetailBeer";
 
 export default function App()
@@ -22,7 +22,7 @@ export default function App()
           <Route exact path="/"><Home /></Route>
           <Route path="/AllBeers/:id"><DetailBeer /></Route>
           <Route path="/AllBeers"><AllBeers /></Route>
-          <Route path="/RandomBeers"><RandomBeers /></Route>
+          <Route path="/RandomBeer"><RandomBeer /></Route>
 
 
         </Switch>

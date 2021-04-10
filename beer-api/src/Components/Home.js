@@ -21,14 +21,13 @@ const Home = () =>
                     <p>This is a large variety of beers to compare and try. </p>
                 </div>
             </Link>
-            <Link to="/RandomBeers">
+            <Link to="/RandomBeer">
                 <div className="randomBeer">
                     <img src={img_randombeer} alt="full glasses of beer"></img>
                     <div className="headerContainer">
                         <h2>Random Beer</h2>
                     </div>
                     <p>Don't know what to search for? Bored? Wanna have fun? Let the AI present you a beer of its own choice. </p>
-
                 </div>
             </Link>
             <div className="homeFooter">

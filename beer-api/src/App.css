@@ -136,7 +136,7 @@ a {
   justify-content: center;
 }
 .detailImageContainer img {
-  width: 204px;
+  width: auto;
   height: 409px;
 }
 .detailData { 
@@ -169,3 +169,6 @@ a {
 .detailBeerList p:last-of-type {
   width: 100%;
 }
+
+/* Random Beer */
+
