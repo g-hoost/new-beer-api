@@ -32,23 +32,23 @@ export default class DetailBeer extends React.Component
         return (
 
             <section className="randomBeersList">
-                <article className="randomBeers">
-                    {this.state.beerList.map((item, i) => (
-                        <div className="randomBeersMainContainer" key={i}>
-                            <div className="imageContainer">
-                                <img src={item.image_url} alt="beer"></img>
-                            </div>
 
-                            <div className="contentContainer">
-                                <p>{item.name}</p>
-                                <p>{item.tagline}</p>
-                                <p>Created by {item.contributed_by}</p>
-                                <div className="button"></div>
-                            </div>
-                            <hr></hr>
+                {this.state.beerList.map((item) => (
+                    <div className="randomBeersMainContainer">
+                        <div className="imageContainer">
+                            <img src={item.image_url} alt="beer"></img>
                         </div>
-                    ))}
-                </article>
+
+                        <h2>{item.name}</h2>
+                        <p>{item.tagline}</p>
+                        <p>First brewed: {item.first_brewed}</p>
+                        <p>Attenuation Level: {item.attenuation_level}</p>
+                        <p>{item.description}</p>
+                        <div className="button"></div>
+
+                    </div>
+                ))}
+
 
             </section >
         )
