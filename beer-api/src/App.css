@@ -115,11 +115,17 @@ a {
   width: 100%;
   color: gray;
 }
-.contentContainer button {
-  width: 7rem;
-  height: 2rem;
+.contentContainer a {
+  display: block;
+  width: 6rem;
+  height: 1.5rem;
+  padding: .5rem;
   background-color: #FFCA41;
   color: white;
   border-style: none;
   border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-align: center;
 }
