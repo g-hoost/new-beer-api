@@ -1,7 +1,6 @@
 import React from 'react';
 import img_allbeers from "../Components/img/christin-hume-08tX2fsuSLg-unsplash.png";
 import img_randombeer from "../Components/img/proriat-hospitality-flENqflm6xU-unsplash.png";
-import img_beers from "../Components/img/beericon.png";
 import 
 {
     Link

@@ -7,7 +7,7 @@ import axios from 'axios';
 import { withRouter } from "react-router";
 import vector from "../Components/img/Vector.png";
 import Navbar from "../Components/Navbar";
-import img_beers from "../Components/img/beericon.png";
+
 
 class RandomBeer extends React.Component
 {
