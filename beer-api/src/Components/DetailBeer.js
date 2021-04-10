@@ -1,11 +1,8 @@
 import React from 'react';
-import 
-{
-    Link
-} from "react-router-dom";
 import axios from 'axios';
 import { withRouter } from "react-router";
 import vector from "../Components/img/Vector.png";
+import Navbar from "../Components/Navbar";
 
 class DetailBeer extends React.Component
 {
@@ -34,6 +31,7 @@ class DetailBeer extends React.Component
     render()
     {
         const item = this.state.beerList;
+
         return (
 
             <section className="detailBeerList">
@@ -50,9 +48,10 @@ class DetailBeer extends React.Component
                     <div className="button"></div>
                 </div>
                 <div className="backButton">
-                    <Link to="/">
-                        <img src={vector} alt=""></img></Link>
+                    <p onClick={() => this.props.history.goBack()}>
+                        <img src={vector} alt=""></img></p>
                 </div>
+                <Navbar />
             </section >
         )
     }

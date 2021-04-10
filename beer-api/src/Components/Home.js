@@ -30,11 +30,6 @@ const Home = () =>
                     <p>Don't know what to search for? Bored? Wanna have fun? Let the AI present you a beer of its own choice. </p>
                 </div>
             </Link>
-            <div className="homeFooter">
-                <Link to="/home">
-                    <button></button>
-                    <img src={img_beers} alt=""></img></Link>
-            </div>
 
         </section >
     );

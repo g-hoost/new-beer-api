@@ -49,7 +49,7 @@ body {
   align-items: center;
   bottom: 0;
   height: 5rem;
-  width: 100%;
+  width: 414px;
   background-color: #FFCA41;
 }
 .homeFooter img {
@@ -75,6 +75,9 @@ a {
   color: inherit;
 }
 /* allBeers */
+.allBeersList {
+  margin-bottom: 8rem;
+}
 .allBeersMainContainer {
   display: flex;
 }
@@ -125,7 +128,11 @@ a {
   font-family: inherit;
   text-align: center;
 }
-
+hr {
+  display: block;
+  width: 90%;
+  background-color: gray;
+}
 /* Detail Beer */
 /* Random Beer */
 
@@ -139,7 +146,7 @@ a {
 }
 .detailData,
 .backButton { 
-  margin-left: 2rem;
+  margin: 0 0 8rem 2rem;
 }
 .detailBeerList h2,
 .randomBeerList h2 {

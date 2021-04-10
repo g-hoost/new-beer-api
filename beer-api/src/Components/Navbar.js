@@ -12,8 +12,8 @@ const Navbar = () =>
         <section className="homeFooter">
 
 
-            <Link to="/home">
-                <button></button>
+            <Link to="/">
+                {/* <button></button> */}
                 <img src={img_beers} alt=""></img></Link>
 
 

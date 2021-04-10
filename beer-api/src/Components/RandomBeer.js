@@ -55,7 +55,7 @@ class RandomBeer extends React.Component
                     <Link to="/">
                         <img src={vector} alt=""></img></Link>
                 </div>
-                <Link to="/Navbar"><Navbar /></Link>
+                <Navbar />
             </section >
 
         )

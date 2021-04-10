@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import Navbar from "../Components/Navbar";
 
 export default class AllBeers extends React.Component
 {
@@ -31,7 +32,7 @@ export default class AllBeers extends React.Component
             <section className="allBeersList">
                 <article className="allBeers">
                     {this.state.beerList.map((item, i) => (
-                        <div className="allBeersMainContainer" key={i}>
+                        <><div className="allBeersMainContainer" key={i}>
                             <div className="imageContainer">
                                 <img src={item.image_url} alt="beer"></img>
                             </div>
@@ -43,10 +44,12 @@ export default class AllBeers extends React.Component
                                 <Link to={"/AllBeers/" + item._id}>Details</Link>
                             </div>
 
-                            <hr></hr>
+
                         </div>
+                            <hr></hr></>
                     ))}
                 </article>
+                <Navbar />
 
             </section >
         )
