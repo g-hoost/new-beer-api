@@ -4,7 +4,6 @@
 body {
   box-sizing: border-box;
   max-width: 414px;
-  max-height: 933px;
   margin: 0 auto;
   padding-top: 3rem;
   font-family: 'Roboto Slab', serif;
@@ -58,15 +57,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-.homeFooter img {
-  position: absolute;
   width: 57px;
   height: auto;
   left: calc(50% - 57px/2 - 0.5px);
   bottom: 15px;
 }
+
 .home button {
   height: 4rem;
   width: 4rem;
@@ -141,7 +137,8 @@ a {
   width: auto;
   height: 409px;
 }
-.detailData { 
+.detailData,
+.backButton { 
   margin-left: 2rem;
 }
 .detailBeerList h2,
@@ -172,12 +169,28 @@ a {
   width: 50%;
   margin: 0;
   justify-content: space-between;
+  color: grey;
 }
 .detailBeerList p:last-of-type,
 .randomBeerList p:last-of-type {
-  width: 100%;
+  width: 95%;
   margin-top: 1rem;
+  color: black;
 }
 
 /* Random Beer */
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 4rem;
+  width: 4rem;
+  background-color:  #FFCA41;
+  border-radius: 50%;
+  border-style: none;
+  }
+
+  /* Navbar */
 

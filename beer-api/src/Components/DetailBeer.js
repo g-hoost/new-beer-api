@@ -1,10 +1,11 @@
 import React from 'react';
-// import 
-// {
-//     Link
-// } from "react-router-dom";
+import 
+{
+    Link
+} from "react-router-dom";
 import axios from 'axios';
 import { withRouter } from "react-router";
+import vector from "../Components/img/Vector.png";
 
 class DetailBeer extends React.Component
 {
@@ -48,7 +49,10 @@ class DetailBeer extends React.Component
                     <p>{item.description}</p>
                     <div className="button"></div>
                 </div>
-
+                <div className="backButton">
+                    <Link to="/">
+                        <img src={vector} alt=""></img></Link>
+                </div>
             </section >
         )
     }

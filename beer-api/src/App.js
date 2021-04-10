@@ -24,7 +24,6 @@ export default function App()
           <Route path="/AllBeers"><AllBeers /></Route>
           <Route path="/RandomBeer"><RandomBeer /></Route>
 
-
         </Switch>
       </div>
     </Router>
