@@ -13,7 +13,6 @@ const Navbar = () =>
 
 
             <Link to="/">
-                {/* <button></button> */}
                 <img src={img_beers} alt=""></img></Link>
 
 

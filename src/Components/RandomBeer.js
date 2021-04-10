@@ -46,8 +46,8 @@ class RandomBeer extends React.Component
                 <div className="detailData">
                     <h2>{item.name}</h2>
                     <p>{item.tagline}</p>
-                    <p>First brewed: </p><p>{item.first_brewed}</p>
-                    <p>Attenuation Level: </p><p>{item.attenuation_level}</p>
+                    <p className="textLeft">First brewed: </p><p className="textRight">{item.first_brewed}</p>
+                    <p className="textLeft">Attenuation Level: </p><p className="textRight">{item.attenuation_level}</p>
                     <p>{item.description}</p>
                     <div className="button"></div>
                 </div>

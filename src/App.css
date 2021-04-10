@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;900&display=swap');
 
-
+:root {
+  --main-color: #FFCA41;
+  --header-color: white;
+  --lighter-color: gray;
+}
 body {
   box-sizing: border-box;
   max-width: 414px;
@@ -27,12 +31,12 @@ body {
 }
 
 .home h2 { 
-  color: white;
+  color: var(--header-color);
   margin-left: .5rem;
 }
 .headerContainer { 
   display: flex;
-  background-color: #FFCA41;
+  background-color: var(--main-color);
   width: 353px;
   height: 3rem;
   margin: 0 auto;
@@ -50,7 +54,7 @@ body {
   bottom: 0;
   height: 5rem;
   width: 414px;
-  background-color: #FFCA41;
+  background-color: var(--main-color);
 }
 .homeFooter img {
   position: absolute;
@@ -66,7 +70,7 @@ body {
 .home button {
   height: 4rem;
   width: 4rem;
-  background-color: white;
+  background-color: var(--header-color);
   border-radius: 50%;
   border-style: none;
 }
@@ -100,7 +104,7 @@ a {
 }
 .contentContainer p:nth-of-type(2) {
   font-size: 1.2rem;
-  color: #FFCA41;
+  color: var(--main-color);
   margin-top: 0;
   width: 200px;
 }
@@ -112,15 +116,15 @@ a {
   content: " ";
   height: 4px;
   width: 100%;
-  color: gray;
+  color: var(--lighter-color);
 }
 .contentContainer a {
   display: block;
   width: 6rem;
   height: 1.5rem;
   padding: .5rem;
-  background-color: #FFCA41;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--header-color);
   border-style: none;
   border-radius: 20px;
   font-weight: bold;
@@ -131,7 +135,7 @@ a {
 hr {
   display: block;
   width: 90%;
-  background-color: gray;
+  background-color: var(--lighter-color);
 }
 /* Detail Beer */
 /* Random Beer */
@@ -144,9 +148,14 @@ hr {
   width: auto;
   height: 409px;
 }
-.detailData,
 .backButton { 
   margin: 0 0 8rem 2rem;
+  width: 100%;
+}
+.detailData {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
 }
 .detailBeerList h2,
 .randomBeerList h2 {
@@ -159,24 +168,25 @@ hr {
 .randomBeerList p:first-of-type {
   margin: 0 0;
   font-size: 1.5rem;
-  color: #FFCA41;
+  color: var(--main-color);
   font-weight: bold;
   display: block;
   padding-bottom: 1rem;
 }
+
 .detailBeerList P:nth-of-type(4)
 .randomBeerList P:nth-of-type(4) {
   margin-bottom: 1rem;
 }
-.detailBeerList p:not(first-of-type),
-.detailBeerList p:not(last-of-type),
-.randomBeerList p:not(first-of-type),
-.randomBeerList p:not(last-of-type)  {
-  display: inline-flex;
+.textLeft,
+.textRight  {
   width: 50%;
   margin: 0;
   justify-content: space-between;
-  color: grey;
+  color: var(--lighter-color);
+}
+.textRight {
+  text-align: right;
 }
 .detailBeerList p:last-of-type,
 .randomBeerList p:last-of-type {
@@ -194,10 +204,7 @@ hr {
   margin-top: 2rem;
   height: 4rem;
   width: 4rem;
-  background-color:  #FFCA41;
+  background-color:  var(--main-color);
   border-radius: 50%;
   border-style: none;
   }
-
-  /* Navbar */
-
