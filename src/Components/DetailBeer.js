@@ -3,6 +3,10 @@ import axios from 'axios';
 import { withRouter } from "react-router";
 import vector from "../Components/img/Vector.png";
 import Navbar from "../Components/Navbar";
+import 
+{
+    Link
+} from "react-router-dom";
 
 class DetailBeer extends React.Component
 {
@@ -48,8 +52,8 @@ class DetailBeer extends React.Component
                     <div className="button"></div>
                 </div>
                 <div className="backButton">
-                    <p className="buttonStyle" onClick={() => this.props.history.goBack()}>
-                        <img src={vector} alt=""></img></p>
+                    <Link to="/">
+                        <img src={vector} alt=""></img></Link>
                 </div>
                 <Navbar />
             </section >
