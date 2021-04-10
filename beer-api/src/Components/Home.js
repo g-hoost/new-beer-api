@@ -34,7 +34,7 @@ const Home = () =>
             <div className="homeFooter">
                 <Link to="/home">
                     <button></button>
-                    <img src={img_beers}></img></Link>
+                    <img src={img_beers} alt=""></img></Link>
             </div>
 
         </section >

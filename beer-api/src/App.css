@@ -79,16 +79,47 @@ a {
   color: inherit;
 }
 /* allBeers */
-
-.allBeersList {
+.allBeersMainContainer {
   display: flex;
-  flex-wrap: wrap;
-}
-.imageContainer,
-.contentContainer { 
-  display: flex;
-  justify-content: space-between;
 }
 .imageContainer { 
-  width: 35%;
+  display: flex;
+  min-width: 100px;
+  margin: 1rem 1rem;
+  padding-left: 4rem;
+  justify-content: center;
+}
+.imageContainer img {
+  justify-content: center;
+  width: auto;
+  height: 191px;
+}
+.contentContainer p:first-of-type {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  width: 200px;
+}
+.contentContainer p:nth-of-type(2) {
+  font-size: 1.2rem;
+  color: #FFCA41;
+  margin-top: 0;
+  width: 200px;
+}
+.contentContainer p:nth-of-type(3) {
+  font-size: .8rem;
+  margin-top: 0;
+}
+.allBeersMainContainer:after {
+  content: " ";
+  height: 4px;
+  width: 100%;
+  color: gray;
+}
+.contentContainer button {
+  width: 7rem;
+  height: 2rem;
+  background-color: #FFCA41;
+  color: white;
+  border-style: none;
+  border-radius: 20px;
 }

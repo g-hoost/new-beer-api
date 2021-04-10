@@ -1,12 +1,11 @@
 import React from 'react';
-import 
-{
-    Link
-} from "react-router-dom";
+// import 
+// {
+//     Link
+// } from "react-router-dom";
 import axios from 'axios';
-import DetailBeer from "./DetailBeer";
 
-export default class AllBeers extends React.Component
+export default class DetailBeer extends React.Component
 {
     constructor(props)
     {
@@ -32,10 +31,10 @@ export default class AllBeers extends React.Component
     {
         return (
 
-            <section className="allBeersList">
-                <article className="allBeers">
+            <section className="randomBeersList">
+                <article className="randomBeers">
                     {this.state.beerList.map((item, i) => (
-                        <div className="allBeersMainContainer" key={i}>
+                        <div className="randomBeersMainContainer" key={i}>
                             <div className="imageContainer">
                                 <img src={item.image_url} alt="beer"></img>
                             </div>
@@ -44,9 +43,8 @@ export default class AllBeers extends React.Component
                                 <p>{item.name}</p>
                                 <p>{item.tagline}</p>
                                 <p>Created by {item.contributed_by}</p>
-                                <Link to="/DetailBeer"><button>Details</button></Link>
+                                <div className="button"></div>
                             </div>
-
                             <hr></hr>
                         </div>
                     ))}

@@ -1,17 +1,20 @@
 import React from 'react';
-import img_allbeers from "../Components/img/christin-hume-08tX2fsuSLg-unsplash.png";
-import img_randombeer from "../Components/img/proriat-hospitality-flENqflm6xU-unsplash.png";
-import img_beers from "../Components/img/beericon.png";
 import 
 {
     Link
 } from "react-router-dom";
-import Axios from 'axios';
+import axios from 'axios';
+import img_allbeers from "../Components/img/christin-hume-08tX2fsuSLg-unsplash.png";
 
-export default class BeerList extends React.Component
+export default class RandomBeers extends React.Component
 {
-    state = {
-        beerList: []
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            beerList: []
+        }
+
     }
 
     componentDidMount()
@@ -29,27 +32,33 @@ export default class BeerList extends React.Component
     {
         return (
 
-            <section className="home">
-                <div className="allBeers">
-                    <img src={img_allbeers} alt="bottles of beer"></img>
-                    <div className="headerContainer">
-                        <h2>All Beers</h2>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
-                </div>
-                <div className="randomBeer">
-                    <img src={img_randombeer} alt="full glasses of beer"></img>
-                    <div className="headerContainer">
-                        <h2>Random Beer</h2>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
+            <section className="randomBeersList">
+                <article className="randomBeers">
+                    {this.state.beerList.map((item, i) => (
+                        <div className="randomBeersMainContainer" key={i}>
+                            <div className="imageContainer">
+                                <img src={item.image_url} alt="beer"></img>
+                            </div>
 
-                </div>
-                <div className="homeFooter">
-                    <Link to="/home">
-                        <button></button>
-                        <img src={img_beers}></img></Link>
-                </div>
+                            <div className="contentContainer">
+                                <p>{item.name}</p>
+                                <p>{item.tagline}</p>
+                                <p>Created by {item.contributed_by}</p>
+                                <div className="button"></div>
+                            </div>
+                            <Link to="/DetailBeer">
+                                <div className="detailBeer">
+                                    <img src={img_allbeers} alt="bottles of beer"></img>
+                                    <div className="headerContainer">
+                                        <h2>All Beers</h2>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
+                                </div>
+                            </Link>
+                            <hr></hr>
+                        </div>
+                    ))}
+                </article>
 
             </section >
         )
