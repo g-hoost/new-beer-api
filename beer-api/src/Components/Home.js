@@ -18,16 +18,16 @@ const Home = () =>
                     <div className="headerContainer">
                         <h2>All Beers</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
+                    <p>This is a large variety of beers to compare and try. </p>
                 </div>
             </Link>
-            <Link>
+            <Link to="/RandomBeers">
                 <div className="randomBeer">
                     <img src={img_randombeer} alt="full glasses of beer"></img>
                     <div className="headerContainer">
                         <h2>Random Beer</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
+                    <p>Don't know what to search for? Bored? Wanna have fun? Let the AI present you a beer of its own choice. </p>
 
                 </div>
             </Link>

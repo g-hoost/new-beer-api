@@ -1,12 +1,12 @@
 import React from 'react';
-import 
-{
-    Link
-} from "react-router-dom";
+// import 
+// {
+//     Link
+// } from "react-router-dom";
 import axios from 'axios';
-import img_allbeers from "../Components/img/christin-hume-08tX2fsuSLg-unsplash.png";
+import { withRouter } from "react-router";
 
-export default class RandomBeers extends React.Component
+class RandomBeers extends React.Component
 {
     constructor(props)
     {
@@ -19,48 +19,38 @@ export default class RandomBeers extends React.Component
 
     componentDidMount()
     {
-        axios.get(`https://ih-beers-api2.herokuapp.com/beers`)
+
+        axios.get(`https://ih-beers-api2.herokuapp.com/beers/random` + this.props.match.params.id)
             .then(res =>
             {
                 const beerList = res.data;
                 this.setState({ beerList });
+
             })
     }
 
 
     render()
     {
+        const item = this.state.beerList;
         return (
 
-            <section className="randomBeersList">
-                <article className="randomBeers">
-                    {this.state.beerList.map((item, i) => (
-                        <div className="randomBeersMainContainer" key={i}>
-                            <div className="imageContainer">
-                                <img src={item.image_url} alt="beer"></img>
-                            </div>
+            <section className="detailBeerList">
 
-                            <div className="contentContainer">
-                                <p>{item.name}</p>
-                                <p>{item.tagline}</p>
-                                <p>Created by {item.contributed_by}</p>
-                                <div className="button"></div>
-                            </div>
-                            <Link to="/DetailBeer">
-                                <div className="detailBeer">
-                                    <img src={img_allbeers} alt="bottles of beer"></img>
-                                    <div className="headerContainer">
-                                        <h2>All Beers</h2>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
-                                </div>
-                            </Link>
-                            <hr></hr>
-                        </div>
-                    ))}
-                </article>
+                <div className="detailImageContainer">
+                    <img src={item.image_url} alt="beer"></img>
+                </div>
+                <div className="detailData">
+                    <h2>{item.name}</h2>
+                    <p>{item.tagline}</p>
+                    <p>First brewed: </p><p>{item.first_brewed}</p>
+                    <p>Attenuation Level: </p><p>{item.attenuation_level}</p>
+                    <p>{item.description}</p>
+                    <div className="button"></div>
+                </div>
 
             </section >
         )
     }
 }
+export default withRouter(RandomBeers);

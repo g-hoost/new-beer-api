@@ -16,13 +16,14 @@ export default function App()
   return (
     <Router>
       <div className="App">
-        {/* <Header></Header> */}
+
         <Switch>
 
           <Route exact path="/"><Home /></Route>
+          <Route path="/AllBeers/:id"><DetailBeer /></Route>
           <Route path="/AllBeers"><AllBeers /></Route>
           <Route path="/RandomBeers"><RandomBeers /></Route>
-          <Route path="/DetailBeer"><DetailBeer /></Route>
+
 
         </Switch>
       </div>

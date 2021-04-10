@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import DetailBeer from "./DetailBeer";
 
 export default class AllBeers extends React.Component
 {
@@ -41,7 +40,7 @@ export default class AllBeers extends React.Component
                                 <p>{item.name}</p>
                                 <p>{item.tagline}</p>
                                 <p>Created by {item.contributed_by}</p>
-                                <Link to="/DetailBeer">Details</Link>
+                                <Link to={"/AllBeers/" + item._id}>Details</Link>
                             </div>
 
                             <hr></hr>

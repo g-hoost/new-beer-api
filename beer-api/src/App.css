@@ -129,3 +129,43 @@ a {
   font-family: inherit;
   text-align: center;
 }
+
+/* Detail Beer */
+.detailImageContainer { 
+  display: flex;
+  justify-content: center;
+}
+.detailImageContainer img {
+  width: 204px;
+  height: 409px;
+}
+.detailData { 
+  margin-left: 2rem;
+}
+.detailBeerList h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.detailBeerList p:first-of-type {
+  margin: 0 0;
+  font-size: 1.5rem;
+  color: #FFCA41;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 1rem;
+}
+.detailBeerList P:nth-of-type(4) {
+  margin-bottom: 1rem;
+}
+.detailBeerList p:not(first-of-type),
+.detailBeerList p:not(last-of-type)  {
+  display: inline-flex;
+  width: 50%;
+  margin: 0;
+  justify-content: space-between;
+}
+.detailBeerList p:last-of-type {
+  width: 100%;
+}
