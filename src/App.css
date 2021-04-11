@@ -164,8 +164,8 @@ hr {
   margin-bottom: 0;
 }
 
-.detailBeerList p:first-of-type,
-.randomBeerList p:first-of-type {
+.detailBeerList h3,
+.randomBeerList h3 {
   margin: 0 0;
   font-size: 1.5rem;
   color: var(--main-color);
@@ -174,10 +174,6 @@ hr {
   padding-bottom: 1rem;
 }
 
-.detailBeerList P:nth-of-type(4)
-.randomBeerList P:nth-of-type(4) {
-  margin-bottom: 1rem;
-}
 .textLeft,
 .textRight  {
   width: 50%;
@@ -188,8 +184,7 @@ hr {
 .textRight {
   text-align: right;
 }
-.detailBeerList p:last-of-type,
-.randomBeerList p:last-of-type {
+.description {
   width: 95%;
   margin-top: 1rem;
   color: black;
