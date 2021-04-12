@@ -46,7 +46,8 @@ body {
 .allBeers p {
   width: 353px;
 }
-.homeFooter {
+.homeFooter,
+.dummyFooter {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -56,15 +57,22 @@ body {
   width: 414px;
   background-color: var(--main-color);
 }
+.dummyFooter {
+  color: var(--header-color);
+  font-size: 1.2rem;
+  text-shadow:  5px 5px 5px var(--lighter-color);
+  font-weight: bolder;
+}
 .homeFooter img {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 57px;
+  width: 50px;
   height: auto;
-  left: calc(50% - 57px/2 - 0.5px);
-  bottom: 15px;
+  left: calc(50% - 50px/2 - 0.5px);
+  bottom: 22px;
+  
 }
 a {
   text-decoration: none;
@@ -124,6 +132,7 @@ a {
   font-size: 1.2rem;
   font-family: inherit;
   text-align: center;
+  box-shadow: 5px 5px 5px var(--lighter-color);
 }
 hr {
   display: block;
@@ -142,8 +151,16 @@ hr {
   height: 409px;
 }
 .backButton { 
-  margin: 0 0 8rem 2rem;
-  width: 100%;
+  margin: 2rem 0 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  background-color:  var(--main-color);
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 5px 5px 5px var(--lighter-color);
 }
 .detailData {
   display: flex;
@@ -183,16 +200,12 @@ hr {
   color: black;
 }
 
-/* Random Beer */
+  /* Navbar */
 
-.backButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  height: 4rem;
-  width: 4rem;
-  background-color:  var(--main-color);
-  border-radius: 50%;
-  border-style: none;
+  .roundShape {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color:  var(--header-color);
+    box-shadow: 5px 5px 5px var(--lighter-color);
   }

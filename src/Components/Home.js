@@ -29,6 +29,7 @@ const Home = () =>
                     <p>Don't know what to search for? Bored? Wanna have fun? Let the AI present you a beer of its own choice. </p>
                 </div>
             </Link>
+            <div className="dummyFooter">Best beer database you can find!</div >
 
         </section >
     );

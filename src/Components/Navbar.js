@@ -10,11 +10,11 @@ const Navbar = () =>
     return (
 
         <section className="homeFooter">
+            <div className="roundShape">
 
-
-            <Link to="/">
-                <img src={img_beers} alt=""></img></Link>
-
+                <Link to="/">
+                    <img src={img_beers} alt=""></img></Link>
+            </div>
 
         </section >
     );

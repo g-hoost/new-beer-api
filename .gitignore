@@ -1,2 +1,4 @@
 node_modules
 node_modules
+src/Components/AllBeers_searchbar.js
+src/Components/Searchbar.js
