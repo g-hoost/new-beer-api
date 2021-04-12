@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import Navbar from "../Components/Navbar";
-import Searchbar from "../Components/Searchbar";
 
 export default class AllBeers extends React.Component
 {
